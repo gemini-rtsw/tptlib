@@ -19,15 +19,14 @@
 # Build settings that are NOT module paths should appear in a
 # CONFIG_SITE file.
 
-EPICS_RELEASE=R3.14.12.8
+EPICS_RELEASE=R3.15.6
 
 TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 
 PRODSUP=/gem_sw/prod/$(EPICS_RELEASE)/support
-WORKSUP=/gem_sw/work/$(EPICS_RELEASE)/support
 
 # If using the sequencer, point SNCSEQ at its top directory:
-SLALIB=$(PRODSUP)/slalib/1-9-10
+SLALIB=$(PRODSUP)/slalib/1-9-10-R315
 
 # EPICS_BASE usually appears last so other apps can override stuff:
 EPICS_BASE=/gem_sw/epics/$(EPICS_RELEASE)/base
