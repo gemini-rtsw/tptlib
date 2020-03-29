@@ -10,10 +10,10 @@ include $(TOP)/configure/CONFIG
 LIBRARY_IOC += tptlib
 
 # <APPNAME>.dbd will be created and installed
-DBD += tptlib.dbd
+#DBD += tptlib.dbd
 
 # tptlib.dbd will be made up from these files:
-tptlib_DBD += base.dbd
+# tptlib_DBD += base.dbd
 # List local .dbd files here
 # tptlib_DBD += xxx.dbd
 
