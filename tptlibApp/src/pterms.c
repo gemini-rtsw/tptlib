@@ -172,7 +172,7 @@ int tptPterms ( int nterm, double cval, double auxil[3],
 
 {
    double xa, ya, za, az, el, zd, xe, ye, ze, ha, dec, ef1, ef2 = 0.0, w,
-          h2, h3, h5, d2, sh, s2h, s3h, s4h, h12, d3, d6, ch;
+          h2, h3, h5, d2, sh, s2h, s3h, h12, d3, d6, ch;
    char type1, type2;
    int j;
 
@@ -1077,7 +1077,6 @@ int tptPterms ( int nterm, double cval, double auxil[3],
       sh = sin ( ha );
       s2h = sin ( h2 );
       s3h = sin ( h3 );
-      s4h = sin ( h2 + h2 );
       ef1 =   0.219 * sin ( h5 )
            + 0.368 * cos ( h5 + ha )
            + 0.195 * sin ( h5 + h5 + h5 )
