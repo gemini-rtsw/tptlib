@@ -19,7 +19,7 @@
 Summary: %{name} Package, a module for EPICS base
 Name: %{name}
 Version: 1.1.1
-Release: 6%{?dist}
+Release: 7%{?dist}
 License: EPICS Open License
 Group: Applications/Engineering
 Source0: %{name}-%{version}.tar.gz
@@ -82,6 +82,11 @@ rm -rf $RPM_BUILD_ROOT
    /%{_prefix}/%{name}/configure
 
 %changelog
+* Mon Jul 26 2021 emmakurz <emma.kurz@noirlab.edu> 1.1.1-7
+- Closes issue #1
+- Squash commit collectively with Tiffany, Felix and Matt. Merge ADE 2 release
+  infrastructure updates from Fast Track 3.15 work into master.
+
 * Wed Dec 30 2020 Roberto Rojas <rrojas@gemini.edu> 1.1.1-6
 - fixed a typo problem
 
