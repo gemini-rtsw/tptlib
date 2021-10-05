@@ -26,8 +26,8 @@ TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 PRODSUP=/gem_base/epics/support
 
 # If using the sequencer, point SNCSEQ at its top directory:
-#SLALIB=$(PRODSUP)/slalib
-SLALIB=/home/framos/work/slalib.git
+SLALIB=$(PRODSUP)/slalib
+#SLALIB=/home/framos/work/slalib.git
 
 # EPICS_BASE usually appears last so other apps can override stuff:
 EPICS_BASE=/gem_base/epics/epics-base
