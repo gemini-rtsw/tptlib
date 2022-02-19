@@ -19,7 +19,7 @@
 Summary: %{name} Package, a module for EPICS base
 Name: %{name}
 Version: 1.1.1
-Release: 7%{?dist}
+Release: 8%{?dist}
 License: EPICS Open License
 Group: Applications/Engineering
 Source0: %{name}-%{version}.tar.gz
@@ -82,6 +82,9 @@ rm -rf $RPM_BUILD_ROOT
    /%{_prefix}/%{name}/configure
 
 %changelog
+* Sat Feb 19 2022 Matt Rippa <matt.rippa@noirlab.edu> 1.1.1-8
+- Rebuild for epics-base/unstable/2022q1-tr4
+
 * Mon Jul 26 2021 emmakurz <emma.kurz@noirlab.edu> 1.1.1-7
 - Closes issue #1
 - Squash commit collectively with Tiffany, Felix and Matt. Merge ADE 2 release
