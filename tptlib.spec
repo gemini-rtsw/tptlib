@@ -19,7 +19,7 @@
 Summary: %{name} Package, a module for EPICS base
 Name: %{name}
 Version: 1.1.1
-Release: 8%{?dist}
+Release: 9%{?dist}
 License: EPICS Open License
 Group: Applications/Engineering
 Source0: %{name}-%{version}.tar.gz
@@ -82,6 +82,10 @@ rm -rf $RPM_BUILD_ROOT
    /%{_prefix}/%{name}/configure
 
 %changelog
+* Tue Mar 29 2022 Matt Rippa <matt.rippa@noirlab.edu> 1.1.1-9
+- Rebuild for unstable/2022q1. See Test Release issue nsf-
+  noirlab/gemini/rtsw/epics-base/epics-base#13
+
 * Sat Feb 19 2022 Matt Rippa <matt.rippa@noirlab.edu> 1.1.1-8
 - Rebuild for epics-base/unstable/2022q1-tr4
 
