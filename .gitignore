@@ -1,3 +1,6 @@
 /configure/RELEASE.local
 /configure/CONFIG_SITE.local
 docker-compose.yml
+include
+lib
+O.*
