@@ -3,7 +3,8 @@
 %define repository gemdev
 %define debug_package %{nil}
 %define arch %(uname -m)
-%define checkout %(git log --pretty=format:'%h' -n 1) 
+%define checkout %(git log --pretty=format:'%h' -n 1)
+%define git_hash %(git rev-parse --short HEAD 2>/dev/null || echo "nogit")
 
 #These global defines are added to prevent stripping
 # symbols on vxWorks cross-compiled code
@@ -19,7 +20,7 @@
 Summary: %{name} Package, a module for EPICS base
 Name: %{name}
 Version: 1.1.1
-Release: 7%{?dist}
+Release: 7.git.%{git_hash}%{?dist}
 License: EPICS Open License
 Group: Applications/Engineering
 Source0: %{name}-%{version}.tar.gz
