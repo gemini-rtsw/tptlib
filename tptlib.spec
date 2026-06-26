@@ -31,8 +31,6 @@ BuildRequires: epics-base-devel = 7.0.7-0.git.f9e3717%{?dist}
 BuildRequires: re2c
 BuildRequires: gemini-ade
 BuildRequires: slalib-devel = 1.9.7-6.git.54d124d%{?dist}
-Requires: epics-base
-Requires: slalib
 ## Switch dependency checking off
 ## AutoReqProv: no
 
